@@ -34,14 +34,25 @@ switch (ownerName) {
 
 }
 
+let carsFan = confirm('Are you a car enthusiast?');
+console.log(carsFan);
 
-let favCar = prompt('what\'s favorite car?');
+switch (carsFan) {
+    case true:
+        document.write('Glad to see that you\'re a cars fan');
+        break;
+    case false:
+        document.write('too bad!');
+        break;
+
+}
+
+let favCar = prompt('what\'s my favorite car?');
 
 if (favCar.toLowerCase()=='Alfa Romeo' || 'alfa romeo') {
     alert('Correct!, its an Alfa Romeo Gulia to be more specific :p')
     console.log('correct !')
 } else if ( favCarfavCar.toLowerCase()== 'Nissan GTR' || 'nissan gtr'){
-
 alert('Correct!, :p')
     console.log('correct !')
 }
