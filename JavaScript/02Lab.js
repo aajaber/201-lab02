@@ -39,12 +39,12 @@ let carsFan = confirm('Are you a car enthusiast?');
 console.log(carsFan);
 
 switch (carsFan) {
-    case true:
-        document.write('Glad to see that you\'re a cars fan');
-        break;
-    case false:
-        document.write('too bad!');
-        break;
+case true:
+  document.write('Glad to see that you\'re a cars fan');
+  break;
+case false:
+  document.write('too bad!');
+  break;
 
 }
 
@@ -104,7 +104,7 @@ let numberInMind = 5;
 let guessedNumber = prompt('I have a number in mind, lets see if you guess it!');
 
 while (!guessedNumber) {
-    guessedNumber = prompt('I have a number in mind, lets see if you guess it!');
+  guessedNumber = prompt('I have a number in mind, lets see if you guess it!');
 }
 if (guessedNumber == numberInMind) {
     alert('You\'re correct');
@@ -112,11 +112,11 @@ if (guessedNumber == numberInMind) {
     score++;
 }
 else if (guessedNumber > numberInMind) {
-    alert('Wrong, your guess is High!');
-    console.log('Wrong!');
+  alert('Wrong, your guess is High!');
+  console.log('Wrong!');
 }
 else if (guessedNumber < numberInMind) {
-    alert('Wrong, your guess is Low!');
+  alert('Wrong, your guess is Low!');
 }
 
 
@@ -126,7 +126,7 @@ let attempts = 6;
 
 let guessedColor = prompt('Lets see if you can guess one of my favorite colors!, but you only have 6 attempts to guess it right!');
 while (!guessedColor) {
-    guessedColor = prompt('Lets see if you can guess one of my favorite colors!, but you only have 6 attempts to guess it right!');
+  guessedColor = prompt('Lets see if you can guess one of my favorite colors!, but you only have 6 attempts to guess it right!');
 }
 for (let i = 0; i < attempts; i++) {
 
@@ -141,13 +141,18 @@ for (let i = 0; i < attempts; i++) {
     else {
         guessedColor = prompt('wrong, guess again ! but remember you only got  ' + --attempts + ' left');
 
-    }
+  }
 
 }
 
 
 alert('and we are done ! your score is : ' + score);
 
+/* This Code added by the Driver (Anas Ahmad) */
 
 
-// =----------------------------------------- 
+let inputuser = prompt('Enter Your Driver Name');
+function Test(userName) {
+  return alert('Welcome '+userName);
+}
+Test(inputuser);
