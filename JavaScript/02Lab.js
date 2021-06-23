@@ -1,13 +1,12 @@
 'use strict';
 
 
-let score=0;
+let score = 0;
 let userName = prompt('Please Enter your Name:');
-if(userName==null)
-{
+if (userName == null) {
     alert('Please Provide your Name');
 }
-else{
+else {
     alert('Welcome to my webpage ' + userName);
     alert('Now im going to ask you  some random questions , hope you\'re ready!');
 }
@@ -19,12 +18,12 @@ switch (ownerName) {
     case 'Ahmad':
         alert('You\'re correct');
         console.log('You got that right');
-        score ++;
+        score++;
         break;
     case 'ahmad':
         alert('You\'re correct, but you should use a capital letter at the beggining of Names!');
         console.log('You got that right, esh!');
-        score ++;
+        score++;
         break;
 
     case null:
@@ -51,28 +50,28 @@ switch (carsFan) {
 
 let favCar = prompt('what\'s my favorite car?');
 
-if (favCar == 'Alfa Romeo' || favCar.toLowerCase() =='alfa romeo') {
+if (favCar == 'Alfa Romeo' || favCar.toLowerCase() == 'alfa romeo') {
     alert('Correct!, its an Alfa Romeo Giulia to be more specific :p');
     console.log('correct !');
-    score ++;
-} else if ( favCar == 'Nissan GTR' ||  favCar.toLowerCase() =='nissan gtr'){
-alert('Correct!, :p');
+    score++;
+} else if (favCar == 'Nissan GTR' || favCar.toLowerCase() == 'nissan gtr') {
+    alert('Correct!, :p');
     console.log('correct !');
-    score ++;
+    score++;
 }
-else{
+else {
     alert('you got that wrong!');
     console.log('nope , wrong!');
 }
 
 let myMajor = prompt('can you guess what i studied back in university?');
 
-if (myMajor == 'Computer Science' || 'computer science' ) {
+if (myMajor == 'Computer Science' || 'computer science') {
     alert('Correct!');
     console.log('correct !');
-    score ++;
-} 
-else{
+    score++;
+}
+else {
     alert('you got that wrong!');
     console.log('nope , wrong!');
 }
@@ -82,9 +81,9 @@ let myUni = prompt('can you guess my university\'s name?');
 if (myMajor == 'AAU' || 'aau') {
     alert('Correct!');
     console.log('correct !');
-    score ++;
-} 
-else{
+    score++;
+}
+else {
     alert('you got that wrong!');
     console.log('nope , wrong!');
 }
@@ -94,9 +93,9 @@ let yearOfGraduation = prompt('can you guess when did I graduate ?');
 if (yearOfGraduation == '2020') {
     alert('Correct!');
     console.log('correct !');
-    score ++;
-} 
-else{
+    score++;
+}
+else {
     alert('you got that wrong!');
     console.log('nope , wrong!');
 }
@@ -110,7 +109,7 @@ while (!guessedNumber) {
 if (guessedNumber == numberInMind) {
     alert('You\'re correct');
     console.log('You got that right');
-    score ++;
+    score++;
 }
 else if (guessedNumber > numberInMind) {
     alert('Wrong, your guess is High!');
@@ -136,18 +135,19 @@ for (let i = 0; i < attempts; i++) {
         alert('correct!');
         console.log(guessedColor);
         score++;
-        i=6;
+        i = 6;
         break;
     }
     else {
-        guessedColor=   prompt('wrong, guess again ! but remember you only got  ' + --attempts + ' left');
+        guessedColor = prompt('wrong, guess again ! but remember you only got  ' + --attempts + ' left');
 
     }
 
 }
 
 
-alert('and we are done ! your score is : ' + score );
+alert('and we are done ! your score is : ' + score);
 
 
 
+// =----------------------------------------- 
